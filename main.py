@@ -9,7 +9,7 @@ def valid_directory(directory_path):
     """Validates that the provided directory exists."""
     if not os.path.isdir(directory_path):
         raise argparse.ArgumentTypeError(
-            '`{}` is not a path to a valid directory'.format(directory_path))
+            f'{directory_path} is not a path to a valid directory')
     return directory_path
 
 

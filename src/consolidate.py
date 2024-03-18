@@ -66,7 +66,7 @@ def _append_new_line_delimiter_to_data_if_not_exists(line):
     """
     if _is_end_of_file(line) or line.endswith('\n'):
         return line
-    return '{}\n'.format(line)
+    return f'{line}\n'
 
 
 def _initialize_lines_to_write_min_heap(files):

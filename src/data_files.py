@@ -22,8 +22,7 @@ def _open_text_file_directory(directory_path):
     for filename in os.listdir(directory_path):
         assert _is_valid_text_file(
             filename
-        ), 'non-text file {} found in provided directory {}'.format(
-            filename, directory_path)
+        ), f'non-text file {filename} found in directory {directory_path}'
         filepath = os.path.join(directory_path, filename)
         filepath_to_file[filepath] = open(filepath, 'r')
     return filepath_to_file
