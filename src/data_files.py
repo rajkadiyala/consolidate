@@ -31,12 +31,14 @@ def _open_text_file_directory(directory_path):
 class DataFiles(object):
     """Opens the provided files and stores the corresponding file objects.
 
+    Files are are expected to be closed individually by caller.
+
     Args:
         input_directory_path: Path to the input directory.
         output_file_path: Path to the output file.
 
     Attributes:
-        input_files: A dictionary of filepaths to readable file objects.
+        input_files: A dictionary of filepaths to readable, open file objects.
         output_file: A writeable file object.
     """
 

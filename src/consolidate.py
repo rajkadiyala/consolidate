@@ -7,11 +7,11 @@ class _LinesMinHeap(object):
     This convenience class wraps common operations in the heapq module of
     Python's standard library.
 
-    Attributes:
-        _heap: The heap storing (line, filepath) tuples.
-
     Args:
         lines_and_filepaths: List of (line, filepath) tuples to heapify.
+
+    Attributes:
+        _heap: The heap storing (line, filepath) tuples.
     """
 
     def __init__(self, lines_and_filepaths):
